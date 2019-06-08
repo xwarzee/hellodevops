@@ -20,6 +20,8 @@ steps:
     publishJUnitResults: false
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+- task: FitNesseConfigure@1
+  inputs:
 - task: FitNesseRun@1
   inputs:
     command: 'execute'
